@@ -1,0 +1,77 @@
+/* Estilos para la página web */
+body {  
+    background-color: #f2f2f2;  
+    font-size: 16px;
+    }
+    h1 {  
+        font-size: 36px;  
+        color: #333;
+    }
+    p {
+        color: red;
+        font-size: 25px;
+    }
+    .encabezado {  
+        text-align: center;  
+        text-transform: uppercase;  
+        font-weight: bold;  
+        font-size: 42px;
+        }
+        .parrafo {  
+            text-align: justify;  
+            text-transform: lowercase;  
+            font-size: 24px;
+        }
+        #fondo {  
+            background-color: #b9b743; /* modificar el color a elección */
+            }
+            span {
+                text-decoration: fuchsia;
+            }
+            p a {  
+                color: cyan;  
+                text-decoration: fuchsia;
+                }
+                .color{
+                    color: fuchsia;
+                }
+                .background-color{
+                    color: black;
+                    background-color: red;
+                }
+                .font-size{
+                    color: black;
+                    font-size: 40px;
+                }
+                .font-weight{
+                    color: black;
+                    font-weight: lighter;
+                }
+                .font-style{
+                    color: black;
+                    font-style:italic;
+                }
+                .font-family{
+                    color: black;
+                    font-family:'Courier New', Courier, monospace;
+                }
+                .text-align{
+                    color: black;
+                    text-align:center;
+                }
+                .text-decoration{
+                    color: black;
+                    text-decoration:underline;
+                }
+                .text-transform{
+                    color: black;
+                    text-transform:uppercase;
+                }
+                .letter-spacing{
+                    color: black;
+                    letter-spacing:2em;
+                }
+                .line-height{
+                    color: black;
+                    line-height:2000%;
+                }

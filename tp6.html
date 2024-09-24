@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP 6 - CSS</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <!--Comentario HTML-->
+    <h1>Titulo Principal</h1>
+    <h2>Ivan Ulloa 4º1 WEB 1 CET30</h2>
+    <h3>¿Qué significa CSS?</h3>
+    <p>Mientras que HTML se utiliza para definir la estructura y la semántica del contenido, CSS
+        se usa para darle estilo y posicionarlo visualmente. CSS se puede usar, por ejemplo, para cambiar la fuente, el
+        color, el tamaño y el espaciado del contenido, para formar multiples columnas, añadir animaciones y otros
+        elementos decorativos.</p>
+    <h3>Para qué sirve el CSS? ¿Qué programa se utiliza para interpretar el CSS?</h3>
+    <p>CSS se usa para darle estilo y posicionarlo visualmente. CSS usualmente le da estilo a los (elementos HTML), pero
+        también puede ser utilizado con otros lenguajes de marcado como SVG o XML.</p>
+    <h3>¿A qué se llama regla de CSS? </h3>
+    <p>Las reglas son un conjunto de propiedades y valores que se aplicarán a una o varias etiquetas según necesitemos.
+    </p>
+    <h3>¿Cuál es la anatomía de la regla de CSS? Agregar imagen explicativa y utilizando una lista descriptiva explicar
+        sus elementos.</h3>
+    <img src="csspartes.3d2bee5.aa01c55ea5fd8ecd1ae1116d536b4e85.jpg" width="400px">
+    <dl>
+        <dt>Selector:</dt>
+        <dd>selecciona el(los) elemento(s) a dar estilo (en este caso, los elementos
+            ). Para dar estilo a un elemento diferente, solo cambia el selector.</dd>
+
+        <dt>Declaracion:</dt>
+        <dd> aplica las propiedades que querés dar al elemento seleccionado en el Selector. En este
+            caso hay
+            una
+            sola regla, pero puede haber más. </dd>
+        <dt>Propiedades:</dt>
+        <dd>es lo que te permite dar un estilo a un elemento HTML. En el ejemplo la propiedad es color que
+            le
+            dará color a las letras de los párrafos. Siempre las propiedades se ubicarán a la izquierda.</dd>
+        <dt>Valor de la propiedad:</dt>
+        <dd>las propiedades deben tener un valor. Cada propiedad tiene valores definidos. Cada
+            valor
+            se ubicará a la derecha.</dd>
+    </dl>
+    <h3> ¿Qué es un selector en CSS? </h3>
+    <p>En CSS los selectores se utilizan para delimitar los elementos HTML de nuestra página web a los que queremos
+        aplicar estilo. Hay una amplia variedad de selectores CSS, lo que permite una gran precisión a la hora de
+        seleccionar elementos a los que aplicar estilo.</p>
+    <h3>Identificar y definir los selectores: de ID, de clases, universal, de etiquetas, descendente.</h3>
+    <dl>
+        <p>El selector universal CSS (*) coincide con elementos de cualquier tipo.</p>
+        <p>Los selectores de ID de CSS buscan un elemento basado en el contenido del atributo ID. El atributo ID del
+            elemento seleccionado debe coincidir exactamente con el valor dado en el selector.</p>
+        <p>los selectores de clase buscan un elemento basado en el contenido de su atributo class. El atributo class
+            está definido como una lista de elementos separados por espacio, y uno de esos elementos debe coincidir
+            exactamente con el nombre de clase dado en el selector.</p>
+        <p>El ␣ combinador (que se supone que representan un espacio, o mejor dicho uno o más espacios en blanco)
+            combina dos selectores tales que el selector combinado incluye sólo los elementos que coinciden con el
+            segundo selector para los que hay un elemento ancestro que coincide con el primer selector. Los selectores
+            descendientes son similares a selectores hijos , pero que no requieren que la relación entre los elementos
+            coincidentes ser estrictamente entre padres e hijos.
+        </p>
+        <p></p>
+    </dl>
+    <h3> Explicar brevemente utilizando una lista ordenada: ¿cómo funciona el CSS? </h3>
+    <ol>
+        <li>El navegador carga el HTML (por ejemplo, lo recibe de la red).</li>
+        <li>Convierte el HTML en un DOM (Modelo de objetos del documento). El DOM representa el documento en la memoria
+            del ordenador. Lo explicaremos más detalladamente en la sección siguiente.</li>
+        <li>Entonces, el navegador va a buscar la mayor parte de los recursos vinculados al documento HTML, como las
+            imágenes y los videos incrustados... ¡y también el CSS vinculado! JavaScript aparece un poco más adelante en
+            el proceso, pero no vamos a hablar de ello aún para evitar complicar las cosas.</li>
+        <li>El navegador analiza el CSS y ordena en diferentes «cubos» las diferentes reglas según el tipo de selector.
+            Por ejemplo, elemento, clase, ID, y así sucesivamente. Para cada tipo de selector que encuentre, calcula qué
+            reglas deben aplicarse y a qué nodos en el DOM se les aplica el estilo según corresponda (este paso
+            intermedio se llama árbol de renderización).
+        </li>
+        <li>El árbol de renderización presenta la estructura en que los nodos deben aparecer después de aplicarle las
+            reglas.</li>
+        <li>En la pantalla se muestra el aspecto visual de la página (esta etapa se llama pintura).
+        </li>
+    </ol>
+    <h3>¿Cuáles son las tres formas para vincular CSS con HTML?</h3>
+    <p>1.Vinculando a un archivo de hoja de estilo separado.</p>
+    <div>
+        2. Incrustando CSS en una etiqueta de estilo.
+    </div>
+    <div>
+        3. Agregando estilos en línea a elementos HTML.
+    </div>
+    <h3> Ingrese al sitio CSS Zen Garden http://www.csszengarden.com y analicemos el código HTML siguiendo los
+        siguientes pasos:
+        <div>
+            Hacer clic en View All Designs
+        </div>
+        <div>Elegir dos diseños y abrirlo en pestañas distintas</div>
+        <div> En el primer diseño presiona ctrl+u (esta combinación de teclas permite ver el código HTML en el
+            navegador)</div>
+        <div> En el segundo diseño presiona ctrl+u (esta combinación de teclas permite ver el código HTML en el
+            navegador)
+        </div>
+        <div> Escribir la URL de los dos diseños seleccionados y responder: las etiquetas dentro de body ¿son iguales?
+            ¿Qué es lo distinto? ¿Qué contribuye al cambio de diseño?
+        </div>
+        <div> Abrir los dos archivos CSS de los diseños seleccionados. ¿Son los mismos?
+        </div>
+        <div> En líneas generales, el mismo HTML ¿puede tener diferentes diseños?
+        </div>
+    </h3>
+    <p>
+        https://www.csszengarden.com/219/
+    </p>
+    <div>
+        https://www.csszengarden.com/210/
+    </div>
+    <p>Si, todas las etiquetas son iguales, lo unico distinto es el href "css", eso modifica la pantalla.</p>
+    <p>No, no son los mismos, el codigo CSS cambia.</p>
+    <p>El HTML no, es el mismo para todos, lo unico que cambia el estilo es el CSS, eso va a hacer que nos modifique
+        todo.</p>
+
+    <h3>Utilizaremos las siguientes propiedades de CSS. Completar la columna de valores posibles para cada propiedad.
+    </h3>
+
+    <table>
+        <tr>
+            <th>Propiedad</th>
+            <th>Descripción</th>
+            <th>Valores posibles</th>
+        </tr>
+        <tr>
+            <td>color</td>
+            <td>Define el color del texto.</td>
+            <td>CSS Nivel 1 sólo acepta 16 colores básicos, los llamados colores VGA ya que son tomados de los colores
+                que son capaces de mostrar las trajetas gráficas VGA.
+                CSS Nivel 2 añadió la palabra clave orange.
+                Desde el principio los navegadores aceptarons otros colores, sobre todo la lista de colores X11 con unas
+                pocas diferencias. ya que, los primeros navegadores, eran en su mayoría aplicaciones X11. SVG 1.0 fué el
+                primer estándar que definió formalmente estas palabras clave. Con frecuencia nos referimos a ello como
+                la lista extendida de colores , los colores X11 o los colores SVG.</td>
+        </tr>
+        <tr>
+            <td>background-color</td>
+            <td>Define el color de fondo de un elemento</td>
+            <td>
+                color
+                Se puede especificar el color de fondo como un valor RGB hexa-decimal o regular, o utilizando una de
+                las palabras claves predefinidas de color.
+
+                transparent
+                El valor por defecto del color de fondo (background-color) es transparent tomando así el color del
+                elemento que está justo debajo de él en el apilamiento.
+            </td>
+        </tr>
+        <tr>
+            <td>font-size</td>
+            <td>Define el tamaño de la fuente del texto.</td>
+            <td>xx-small, x-small, small, medium, large, x-large, xx-large
+                un grupo de palabras clave de dimensión absoluta en relación al que determina el usuario como tamaño por
+                defecto (que es medium). De forma parecida a las sentencias HTML font size="1"> hasta font size="7">
+                donde el tamaño por defecto es font size="3">.
+
+                larger, smaller
+                más grande o más pequeño que el tamaño de letra del elemento padre, con aproximadamente el
+                mismo ratio que el mencionado anteriormente.
+
+                longitud
+                una unidad positiva de longitud.
+
+                Porcentaje
+                un porcentaje positivo del cuerpo de letra del elemento padre.
+
+                Es aconsejable evitar el uso de valores que no sean relativos al tamaño por defecto
+                definido por el usuario, tales como longitud absoluta en unidades distintas a em o
+                ex. Sin embargo, si hay que usar ese tipo de valores, es preferible utilizar
+                unidades px (píxel), ya que su significado no varía en función de las
+                características del sistema operativo (casi siempre erróneas) como la resolución del
+                monitor.</td>
+        </tr>
+        <tr>
+            <td>font-weight </td>
+            <td>Define el grosor de la fuente del texto (por ejemplo, si se trata de texto en negrita o normal).</td>
+            <td>normal
+                Peso/grueso normal de la fuente. Igual que 400.
+
+                bold
+                Grueso ancho (negrita). Igual que 700.
+
+                lighter
+                Corresponde a un tipo de fuente menos grueso que el tipo del elemento padre (dentro de los valores
+                disponibles).
+
+                bolder
+                Corresponde a un tipo de fuente más grueso que el tipo del elemento padre (dentro de los valores
+                disponibles).
+
+                100, 200, 300, 400, 500, 600, 700, 800, 900
+                Pesos numéricos para los tipos de fuente que nos permiten más flexibilidad que normal - bold. Si el peso
+                especificado no existe en el tipo de fuente escogido, un valor entre 600 y 900 se presentará con el
+                valor más próximo disponible para dar una letra más oscura. De igual forma, un valor entre 100 y 500 se
+                presentará con el valor más próximo disponible para dar una letra más clara. Esto significa que para los
+                tipos de letra que sólo dispongan de normal y bold, cualquier valor entre 100 y 500 será normal y entre
+                600 y 900, será bold.</td>
+        </tr>
+        <tr>
+            <td>font-style</td>
+            <td>Define el estilo de la fuente del texto (por ejemplo, si es cursiva o normal).</td>
+            <td>normal
+                Escoge un tipo de letra clasificado como normal dentro de una familia de fuente.
+
+                italic
+                Escoge un tipo de letra etiquetado como italic, o, si una versión cursiva del tipo de letra no esté
+                disponible, escoge un tipo de letra etiquetado como oblique en lugar de eso.
+
+                oblique
+                Escoge un tipo de letra etiquetado como oblique, o, si una versión oblique del tipo de letra no esté
+                disponible, escoge un tipo de letra etiquetado como italic en lugar de eso.</td>
+        </tr>
+        <tr>
+            <td>font-family</td>
+            <td>Define el tipo de letra a utilizar para el texto.</td>
+            <td>nombre de familia o genérico>
+                puede ser un nombre de familia> o un nombre genérico>
+
+                nombre de familia
+                El nombre de la familia de la fuente. Por ejemplo, 'Times' y 'Helvética' son nombres de familia. Los
+                nombres de familia que contengan espacios, deben escribirse entre comillas (por ejemplo: "Times New
+                Roman").
+
+                nombre genérico
+                Se han definido los siguientes nombres genéricos: serif, sans-serif, cursive, fantasy, monospace. Los
+                nombres genéricos son palabras claves y no deben ponerse entre comillas.</td>
+        </tr>
+        <tr>
+            <td>text-align</td>
+            <td>Define la alineación horizontal del texto (izquierda, centro o derecha)</td>
+            <td>start
+                Lo mismo que left si la dirección es de izquierda a derecha y right si la dirección es de derecha a
+                izquierda.
+
+                end
+                Lo mismo que right si la dirección es de izquierda a derecha e left si la dirección es de derecha a
+                izquierda.
+
+                left
+                El contenido en línea se alinea con el borde izquierdo de la línea de la caja.
+
+                right
+                El contenido en línea se alinea con el borde derecho de la línea de la caja.
+
+                center
+                El contenido en línea se centra dentro de la línea de la caja.
+
+                justify
+                El contenido en línea está justificado. El texto debe ser espaciado para alinear sus bordes izquierdo y
+                derecho con los bordes izquierdo y derecho de la línea de la caja, excepto la última línea.
+
+                justify-all Experimental
+                Igual que justify, pero también obliga a justificar la última línea.
+
+                match-parent
+                Similar a inherit, pero los valores start y end son calculados de acuerdo a la direction del padre y se
+                sustituyen por el valor left o right apropiado.
+
+                string> Experimental
+                Cuando se aplica a la celda de una tabla, especifica el carácter de alineación alrededor del cual se
+                alineará el contenido de la celda.</td>
+        </tr>
+        <tr>
+            <td>text-decoration</td>
+            <td>Define la decoración del texto (por ejemplo, si está subrayado o tachado).</td>
+            <td>La propiedad text-decoration es una forma reducida, y puede usar los valores de cada una de las
+                propiedades de la forma larga: text-decoration-line, text-decoration-color, y text-decoration-style</td>
+        </tr>
+        <tr>
+            <td>text-transform</td>
+            <td>Define la transformación del texto (por ejemplo, en mayúsculas o minúsculas).</td>
+            <td>capitalize
+                Es una palabra clave que fuerza a que la primera letra de cada palabra sea convertida a mayúscula. EL
+                resto de caracteres no es modificado; eso significa que mantienen su tamaño original, como haya sido
+                escrito en el texto del elemento. Una letra es cualquier caracter Unicode que sea parte de la categoría
+                general de Letras o Números Experimental: esto excluye cualquier signo de puntuación o símbolos al
+                principio de la palabra.
+                uppercase
+                Es una palabra clave que fuerza a todos los caracteres a ser convertidos a mayúsculas.
+
+                lowercase
+                Es una palabra clave que fuerza a todos los caracteres a ser convertidos a minúsculas.
+
+                none
+                Es una palabra clave que previene que sea cambiado el tamaño de los caracteres.
+
+                full-width Experimental
+                Es una palabra clave que fuerza que la escritura de un caracter, principalmente ideogramas y del
+                alfabeto latín, abarque el espacio dentro de un cuadro, permitiendo que queden alineados al alfabeto
+                asiático del este (como el chino o japonés).
+
+
+            </td>
+        </tr>
+        <tr>
+            <td>letter-spacing</td>
+            <td>Define el espacio entre letras.</td>
+            <td>normal
+                El espaciado normal entre letras de la fuente actual. A diferencia de un valor de 0, esta palabra clave
+                permite al agente de usuario modificar el espacio entre caracteres para justificar el texto.
+
+                length>
+                    Especifica un espacio adicional entre caracteres además del espacio predeterminado entre caracteres.
+                    Los valores pueden ser negativos, pero puede haber límites específicos de la implementación. Los
+                    agentes de usuario no pueden aumentar ni disminuir aún más el espacio entre caracteres para
+                    justificar el texto.
+            </td>
+        </tr>
+        <tr>
+            <td>line-height</td>
+            <td>Define la altura de línea del texto.</td>
+            <td>normal
+                Depende del agente del usuario. Los navegadores de escritorio (incluido Firefox) usan un valor por defecto de apenas 1.2, dependiendo del font-family del elemento.
+                
+                número>
+                El valor utilizado es este número> sin unidades multiplicado por el propio tamaño de fuente del elemento. El valor calculado es el mismo que el número> especificado. En la mayoría de los casos, esta es la forma preferida de establecer line-height y evitar resultados inesperados debido a la herencia.
+                
+                longitud>
+                La longitud> especificada se utiliza en el cálculo de la altura de la casilla encuadrada por líneas. Los valores dados en unidades em pueden producir resultados inesperados (ver ejemplo más abajo).
+                
+                porcentaje>
+                En relación con el tamaño de fuente del elemento en sí. El valor calculado es este porcentaje> multiplicado por el tamaño de letra del elemento calculado. Los valores porcentuales pueden producir resultados inesperados (ver el segundo ejemplo a continuación).</td>
+        </tr>
+
+    </table>
+</body>
+
+</html>

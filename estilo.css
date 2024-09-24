@@ -1,0 +1,37 @@
+/* Comentario de css */
+body {
+    background-color: black;
+    h1{
+        color: fuchsia;
+    }
+    h2{
+        color:red
+    }
+    h3{
+        color: red;
+    }
+    p {
+        color: white;
+    }
+    div {
+        color: white;
+    }
+    li {
+        color: white;
+    }
+    dt {
+        color: white;
+    }
+    dl {
+        color: white;
+    }
+    dd {
+        color: white;
+    }
+    td {
+        color: white;
+    }
+    tr {
+        color: white;
+    }
+    }
